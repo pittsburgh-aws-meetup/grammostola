@@ -10,6 +10,9 @@ const Header = () => (
 			<Link activeClassName={style.active} href="/profile">Me</Link>
 			<Link activeClassName={style.active} href="/profile/john">John</Link>
 		</nav>
+		<style>
+			@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+		</style>
 	</header>
 );
 
