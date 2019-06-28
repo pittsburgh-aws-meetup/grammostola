@@ -3,7 +3,7 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	background: #FAFAFA;
+	background: #262f3eff;
 	font-family: 'Lato', 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
 	color: #444;
@@ -11,10 +11,21 @@ html, body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-* {
-	box-sizing: border-box;
-}
-
 #app {
 	height: 100%;
+}
+
+img.head_img {
+	width: 15%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #FFFFFF;
+	margin-top: 15px;
+	margin-bottom: 18px;
+}
+
+* {
+	box-sizing: border-box;
 }

@@ -3,11 +3,12 @@
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 56px;
+	height: auto;
 	padding: 0;
-	background: #673AB7;
+	background: #262f3eff;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	z-index: 50;
+	border-bottom: 2px solid #ff9900ff;
 }
 
 .header h1 {
