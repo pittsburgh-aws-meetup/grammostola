@@ -1,11 +1,6 @@
-import { h, Component } from 'preact';
-import { Router } from 'preact-router';
+import { Component } from 'preact';
 
 import Header from './header';
-
-// Code-splitting is automated for routes
-import Home from '../routes/home';
-import Profile from '../routes/profile';
 
 export default class App extends Component {
 	render() {
