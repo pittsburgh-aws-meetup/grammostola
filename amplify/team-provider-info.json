@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "grammostola-dev-20190703132554-authRole",
+            "UnauthRoleArn": "arn:aws:iam::473626866269:role/grammostola-dev-20190703132554-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::473626866269:role/grammostola-dev-20190703132554-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "grammostola-dev-20190703132554-deployment",
+            "UnauthRoleName": "grammostola-dev-20190703132554-unauthRole",
+            "StackName": "grammostola-dev-20190703132554",
+            "StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-dev-20190703132554/9cd34be0-9db7-11e9-8c3e-02649197f7a0"
+        }
+    }
+}
