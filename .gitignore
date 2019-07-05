@@ -4,6 +4,7 @@ node_modules
 *.lock
 package-lock.json
 .idea/*
+*.orig
 
 #amplify
 amplify/\#current-cloud-backend

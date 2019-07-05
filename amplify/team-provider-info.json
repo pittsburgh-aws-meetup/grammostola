@@ -1,26 +1,38 @@
 {
-	"dev": {
-		"awscloudformation": {
-			"AuthRoleName": "grammostola-dev-20190703132554-authRole",
-			"UnauthRoleArn": "arn:aws:iam::473626866269:role/grammostola-dev-20190703132554-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::473626866269:role/grammostola-dev-20190703132554-authRole",
-			"Region": "us-east-2",
-			"DeploymentBucketName": "grammostola-dev-20190703132554-deployment",
-			"UnauthRoleName": "grammostola-dev-20190703132554-unauthRole",
-			"StackName": "grammostola-dev-20190703132554",
-			"StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-dev-20190703132554/9cd34be0-9db7-11e9-8c3e-02649197f7a0"
-		}
-	},
-	"prod": {
-		"awscloudformation": {
-			"AuthRoleName": "grammostola-prod-20190703134550-authRole",
-			"UnauthRoleArn": "arn:aws:iam::473626866269:role/grammostola-prod-20190703134550-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::473626866269:role/grammostola-prod-20190703134550-authRole",
-			"Region": "us-east-2",
-			"DeploymentBucketName": "grammostola-prod-20190703134550-deployment",
-			"UnauthRoleName": "grammostola-prod-20190703134550-unauthRole",
-			"StackName": "grammostola-prod-20190703134550",
-			"StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-prod-20190703134550/65af3590-9dba-11e9-899b-02278d0d93fc"
-		}
-	}
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "grammostola-dev-20190703132554-authRole",
+            "UnauthRoleArn": "arn:aws:iam::473626866269:role/grammostola-dev-20190703132554-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::473626866269:role/grammostola-dev-20190703132554-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "grammostola-dev-20190703132554-deployment",
+            "UnauthRoleName": "grammostola-dev-20190703132554-unauthRole",
+            "StackName": "grammostola-dev-20190703132554",
+            "StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-dev-20190703132554/9cd34be0-9db7-11e9-8c3e-02649197f7a0"
+        }
+    },
+    "prod": {
+        "awscloudformation": {
+            "AuthRoleName": "grammostola-prod-20190703134550-authRole",
+            "UnauthRoleArn": "arn:aws:iam::473626866269:role/grammostola-prod-20190703134550-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::473626866269:role/grammostola-prod-20190703134550-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "grammostola-prod-20190703134550-deployment",
+            "UnauthRoleName": "grammostola-prod-20190703134550-unauthRole",
+            "StackName": "grammostola-prod-20190703134550",
+            "StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-prod-20190703134550/65af3590-9dba-11e9-899b-02278d0d93fc"
+        }
+    },
+    "meetup": {
+        "awscloudformation": {
+            "AuthRoleName": "grammostola-meetup-20190704161556-authRole",
+            "UnauthRoleArn": "arn:aws:iam::473626866269:role/grammostola-meetup-20190704161556-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::473626866269:role/grammostola-meetup-20190704161556-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "grammostola-meetup-20190704161556-deployment",
+            "UnauthRoleName": "grammostola-meetup-20190704161556-unauthRole",
+            "StackName": "grammostola-meetup-20190704161556",
+            "StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-meetup-20190704161556/885e4d90-9e98-11e9-ba16-06e3439fefa0"
+        }
+    }
 }

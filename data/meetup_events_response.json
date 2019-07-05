@@ -1,0 +1,83 @@
+{
+  "data": [
+    {
+      "created": 1554834396000,
+      "duration": 10800000,
+      "id": "260482919",
+      "name": "August meetup",
+      "date_in_series_pattern": false,
+      "status": "upcoming",
+      "time": 1565733600000,
+      "local_date": "2019-08-13",
+      "local_time": "18:00",
+      "updated": 1562791899000,
+      "utc_offset": -14400000,
+      "waitlist_count": 0,
+      "yes_rsvp_count": 26,
+      "venue": {
+        "id": 26507578,
+        "name": "2010 Smallman St",
+        "lat": 40.45184326171875,
+        "lon": -79.98422241210938,
+        "repinned": false,
+        "address_1": "2010 Smallman St",
+        "city": "Pittsburgh",
+        "country": "us",
+        "localized_country_name": "USA",
+        "zip": "15222",
+        "state": "PA"
+      },
+      "group": {
+        "created": 1519153784000,
+        "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+        "id": 27589019,
+        "join_mode": "open",
+        "lat": 40.45000076293945,
+        "lon": -79.98999786376953,
+        "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+        "who": "Members",
+        "localized_location": "Pittsburgh, PA",
+        "state": "PA",
+        "country": "us",
+        "region": "en_US",
+        "timezone": "US/Eastern"
+      },
+      "link": "https://www.meetup.com/Pittsburgh-Amazon-Web-Services-AWS-Users/events/260482919/",
+      "description": "<p>Do you have visibility into your cloud assets in AWS? Did you configure your S3 buckets properly? Are you integrating \u201cSecurity as Code\u201d in your DevOps practices? Moreover, is your industry heavily regulated and reliant on adhering to compliance protocols? Our talks will include common yet serious security risks in AWS, and how enhanced visibility and compliance rulesets can remediate them.</p> <p>Presenter: Senior Security Engineer Chris Nottingham</p> <p>Basic Agenda:</p> <p>06:00 - 07:15 =&gt; Grab food, drink, and a seat<br/>07:15 - 07:20 =&gt; Nate's opening remarks<br/>07:20 - 08:30 =&gt; Cloud Security in AWS with Chris Nottingham<br/>08:30 - 09:00 =&gt; Socializing and Networking</p> <p>Doors will be open earlier for this Meetup for those who want to come early. There will be a post-networking \u201cAsk the Engineer\u201d social hour at the PA Market to follow.</p> ",
+      "visibility": "public"
+    },
+    {
+      "created": 1556910304000,
+      "duration": 7200000,
+      "id": "261142951",
+      "name": "October meetup",
+      "date_in_series_pattern": false,
+      "status": "upcoming",
+      "time": 1570575600000,
+      "local_date": "2019-10-08",
+      "local_time": "19:00",
+      "updated": 1563558795000,
+      "utc_offset": -14400000,
+      "waitlist_count": 0,
+      "yes_rsvp_count": 15,
+      "group": {
+        "created": 1519153784000,
+        "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+        "id": 27589019,
+        "join_mode": "open",
+        "lat": 40.45000076293945,
+        "lon": -79.98999786376953,
+        "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+        "who": "Members",
+        "localized_location": "Pittsburgh, PA",
+        "state": "PA",
+        "country": "us",
+        "region": "en_US",
+        "timezone": "US/Eastern"
+      },
+      "link": "https://www.meetup.com/Pittsburgh-Amazon-Web-Services-AWS-Users/events/261142951/",
+      "description": "<p>Topic: Building .NET Applications on AWS</p> <p>This session is targeted towards .Net &amp; Microsoft developers/architects/development leads who are exploring or building applications with AWS .NET SDK Technologies. Learn AWS VS tools and .Net Core integration with several AWS Services (ECS, EC2, CloudFormation, SNS, SQS, Lambda, Step functions, Config Rules, CDK etc.). Also learn about how other AWS .NET application development usecases.</p> <p>Presenter: Amit Jha Senior Solutions Architect, Amazon Web Services</p> <p>Amit works as Sr Solutions Architect with Amazon Web Services (AWS) and has 17+ years of Industry experience. In his current role, Amit focuses on architecting on AWS, optimizing AWS environments and helping customers &amp; partners with cloud adoption with special focus on Microsoft/.NET workloads. Prior to his current role, he served numerous roles at Microsoft for 11+ years helping large enterprise (Several Industry Verticals) with Cloud/Software architecture and development consulting.</p> <p>Agenda:</p> <p>07:00 - 07:10 =&gt; Grab food, drink, and a seat<br/>07:10 - 07:15 =&gt; Introductory comments from Nate<br/>07:20 - 08:50 =&gt; Session topic<br/>08:50 - 09:00 =&gt; Q&amp;A</p> ",
+      "visibility": "public"
+    }
+  ]
+}

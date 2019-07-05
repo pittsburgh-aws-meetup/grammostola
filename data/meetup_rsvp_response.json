@@ -1,0 +1,252 @@
+{
+  "data": [
+    {
+      "created": 1554834396000,
+      "updated": 1554834396000,
+      "response": "yes",
+      "guests": 0,
+      "event": {
+        "id": "260482919",
+        "name": "August meetup",
+        "yes_rsvp_count": 0,
+        "time": 1565733600000,
+        "utc_offset": -14400000
+      },
+      "group": {
+        "id": 27589019,
+        "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+        "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+        "status": "active",
+        "who": "Members",
+        "members": 568,
+        "join_mode": "open",
+        "localized_location": "Pittsburgh, PA"
+      },
+      "member": {
+        "id": 12966232,
+        "name": "Nathan Menge",
+        "role": "organizer",
+        "event_context": {
+          "host": true
+        }
+      },
+      "venue": {
+        "id": 26507578,
+        "name": "2010 Smallman St",
+        "lat": 40.45184326171875,
+        "lon": -79.98422241210938,
+        "repinned": false,
+        "address_1": "2010 Smallman St",
+        "city": "Pittsburgh",
+        "country": "us",
+        "localized_country_name": "USA",
+        "zip": "15222",
+        "state": "PA"
+      }
+    },
+    {
+      "created": 1563361432000,
+      "updated": 1563361432000,
+      "response": "yes",
+      "guests": 0,
+      "event": {
+        "id": "260482919",
+        "name": "August meetup",
+        "yes_rsvp_count": 0,
+        "time": 1565733600000,
+        "utc_offset": -14400000
+      },
+      "group": {
+        "id": 27589019,
+        "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+        "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+        "status": "active",
+        "who": "Members",
+        "members": 568,
+        "join_mode": "open",
+        "localized_location": "Pittsburgh, PA"
+      },
+      "member": {
+        "id": 268664924,
+        "name": "Patrick Kenning",
+        "photo": {
+          "id": 282758718,
+          "highres_link": "https://secure.meetupstatic.com/photos/member/9/7/3/e/highres_282758718.jpeg",
+          "photo_link": "https://secure.meetupstatic.com/photos/member/9/7/3/e/member_282758718.jpeg",
+          "thumb_link": "https://secure.meetupstatic.com/photos/member/9/7/3/e/thumb_282758718.jpeg",
+          "type": "member",
+          "base_url": "https://secure.meetupstatic.com"
+        },
+        "event_context": {
+          "host": false
+        }
+      },
+      "venue": {
+        "id": 26507578,
+        "name": "2010 Smallman St",
+        "lat": 40.45184326171875,
+        "lon": -79.98422241210938,
+        "repinned": false,
+        "address_1": "2010 Smallman St",
+        "city": "Pittsburgh",
+        "country": "us",
+        "localized_country_name": "USA",
+        "zip": "15222",
+        "state": "PA"
+      }
+    },
+    {
+      "created": 1562813302000,
+      "updated": 1562813302000,
+      "response": "yes",
+      "guests": 0,
+      "event": {
+        "id": "260482919",
+        "name": "August meetup",
+        "yes_rsvp_count": 0,
+        "time": 1565733600000,
+        "utc_offset": -14400000
+      },
+      "group": {
+        "id": 27589019,
+        "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+        "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+        "status": "active",
+        "who": "Members",
+        "members": 568,
+        "join_mode": "open",
+        "localized_location": "Pittsburgh, PA"
+      },
+      "member": {
+        "id": 56230072,
+        "name": "Patrick Neville",
+        "photo": {
+          "id": 64598852,
+          "highres_link": "https://secure.meetupstatic.com/photos/member/9/7/c/4/highres_64598852.jpeg",
+          "photo_link": "https://secure.meetupstatic.com/photos/member/9/7/c/4/member_64598852.jpeg",
+          "thumb_link": "https://secure.meetupstatic.com/photos/member/9/7/c/4/thumb_64598852.jpeg",
+          "type": "member",
+          "base_url": "https://secure.meetupstatic.com"
+        },
+        "event_context": {
+          "host": false
+        }
+      },
+      "venue": {
+        "id": 26507578,
+        "name": "2010 Smallman St",
+        "lat": 40.45184326171875,
+        "lon": -79.98422241210938,
+        "repinned": false,
+        "address_1": "2010 Smallman St",
+        "city": "Pittsburgh",
+        "country": "us",
+        "localized_country_name": "USA",
+        "zip": "15222",
+        "state": "PA"
+      }
+    },
+    {
+      "created": 1557158225000,
+      "updated": 1557158225000,
+      "response": "yes",
+      "guests": 0,
+      "event": {
+        "id": "260482919",
+        "name": "August meetup",
+        "yes_rsvp_count": 0,
+        "time": 1565733600000,
+        "utc_offset": -14400000
+      },
+      "group": {
+        "id": 27589019,
+        "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+        "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+        "status": "active",
+        "who": "Members",
+        "members": 568,
+        "join_mode": "open",
+        "localized_location": "Pittsburgh, PA"
+      },
+      "member": {
+        "id": 187321042,
+        "name": "Ryan Sydlik",
+        "photo": {
+          "id": 246161259,
+          "highres_link": "https://secure.meetupstatic.com/photos/member/a/1/2/b/highres_246161259.jpeg",
+          "photo_link": "https://secure.meetupstatic.com/photos/member/a/1/2/b/member_246161259.jpeg",
+          "thumb_link": "https://secure.meetupstatic.com/photos/member/a/1/2/b/thumb_246161259.jpeg",
+          "type": "member",
+          "base_url": "https://secure.meetupstatic.com"
+        },
+        "event_context": {
+          "host": false
+        }
+      },
+      "venue": {
+        "id": 26507578,
+        "name": "2010 Smallman St",
+        "lat": 40.45184326171875,
+        "lon": -79.98422241210938,
+        "repinned": false,
+        "address_1": "2010 Smallman St",
+        "city": "Pittsburgh",
+        "country": "us",
+        "localized_country_name": "USA",
+        "zip": "15222",
+        "state": "PA"
+      }
+    },
+    {
+      "created": 1555989641000,
+      "updated": 1555989641000,
+      "response": "yes",
+      "guests": 0,
+      "event": {
+        "id": "260482919",
+        "name": "August meetup",
+        "yes_rsvp_count": 0,
+        "time": 1565733600000,
+        "utc_offset": -14400000
+      },
+      "group": {
+        "id": 27589019,
+        "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+        "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+        "status": "active",
+        "who": "Members",
+        "members": 568,
+        "join_mode": "open",
+        "localized_location": "Pittsburgh, PA"
+      },
+      "member": {
+        "id": 279621353,
+        "name": "Sam Z.",
+        "photo": {
+          "id": 287423216,
+          "highres_link": "https://secure.meetupstatic.com/photos/member/5/a/b/0/highres_287423216.jpeg",
+          "photo_link": "https://secure.meetupstatic.com/photos/member/5/a/b/0/member_287423216.jpeg",
+          "thumb_link": "https://secure.meetupstatic.com/photos/member/5/a/b/0/thumb_287423216.jpeg",
+          "type": "member",
+          "base_url": "https://secure.meetupstatic.com"
+        },
+        "event_context": {
+          "host": false
+        }
+      },
+      "venue": {
+        "id": 26507578,
+        "name": "2010 Smallman St",
+        "lat": 40.45184326171875,
+        "lon": -79.98422241210938,
+        "repinned": false,
+        "address_1": "2010 Smallman St",
+        "city": "Pittsburgh",
+        "country": "us",
+        "localized_country_name": "USA",
+        "zip": "15222",
+        "state": "PA"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id": 12966232,
+  "name": "Nathan Menge",
+  "email": "nathan.menge@gmail.com",
+  "status": "active",
+  "joined": 1284484940000,
+  "city": "Pittsburgh",
+  "country": "us",
+  "localized_country_name": "USA",
+  "state": "PA",
+  "lat": 40.44,
+  "lon": -79.96,
+  "group_profile": {
+    "status": "active",
+    "visited": 1563558377000,
+    "created": 1519230057000,
+    "updated": 1548775320000,
+    "role": "organizer",
+    "group": {
+      "id": 27589019,
+      "urlname": "Pittsburgh-Amazon-Web-Services-AWS-Users",
+      "name": "Amazon Web Services (AWS) User Group - PITTSBURGH",
+      "status": "active",
+      "who": "Members",
+      "members": 568,
+      "join_mode": "open",
+      "localized_location": "Pittsburgh, PA"
+    },
+    "link": "https://www.meetup.com/Pittsburgh-Amazon-Web-Services-AWS-Users/members/12966232/"
+  },
+  "is_pro_admin": false
+}

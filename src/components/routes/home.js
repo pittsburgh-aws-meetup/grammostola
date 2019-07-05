@@ -1,8 +1,12 @@
+import { MeetupFetcher } from '../meetup/fetcher';
+import { Stretch } from 'styled-loaders';
+
 const Home = () => (
-	<div>
-		<h1>Home many more words here ot see if this is the thing making the difference</h1>
-		<p>This is the Home component.</p>
-	</div>
+	<MeetupFetcher
+		client_id="hb115nhk0sa7qfkae5ab3en20v"
+		callback_url="http://localhost:8080"
+		spinner={<Stretch duration="2s" size="75px" color="#ff9900" />}
+	/>
 );
 
 export default Home;
