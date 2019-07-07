@@ -22,5 +22,17 @@
             "StackName": "grammostola-prod-20190703134550",
             "StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-prod-20190703134550/65af3590-9dba-11e9-899b-02278d0d93fc"
         }
+    },
+    "slackcoc": {
+        "awscloudformation": {
+            "AuthRoleName": "grammostola-slackcoc-20190707153455-authRole",
+            "UnauthRoleArn": "arn:aws:iam::473626866269:role/grammostola-slackcoc-20190707153455-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::473626866269:role/grammostola-slackcoc-20190707153455-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "grammostola-slackcoc-20190707153455-deployment",
+            "UnauthRoleName": "grammostola-slackcoc-20190707153455-unauthRole",
+            "StackName": "grammostola-slackcoc-20190707153455",
+            "StackId": "arn:aws:cloudformation:us-east-2:473626866269:stack/grammostola-slackcoc-20190707153455/4ca9ae40-a0ee-11e9-8546-0aedd1bf2484"
+        }
     }
 }

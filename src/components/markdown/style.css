@@ -1,0 +1,21 @@
+.markdown {
+    color: #FFF;
+    margin: 50px;
+    position: relative;
+}
+
+.markdown h1 {
+    text-align: center;
+}
+
+.markdown h2 {
+    text-align: center;
+}
+
+.markdown a:link {
+    color: #ff9900ff
+}
+
+.markdown a:visited {
+    color: #dd7722ff
+}

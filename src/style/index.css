@@ -26,6 +26,14 @@ img.head_img {
 	margin-bottom: 18px;
 }
 
+a:link {
+	color: #ff9900ff
+}
+
+a:visited {
+	color: #dd7722ff
+}
+
 * {
 	box-sizing: border-box;
 }
