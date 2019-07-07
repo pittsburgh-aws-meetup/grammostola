@@ -6,9 +6,10 @@ html, body {
 	background: #262f3eff;
 	font-family: 'Lato', 'Helvetica Neue', arial, sans-serif;
 	font-weight: 400;
-	color: #444;
+	color: #fff;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	border-color: #ff9900ff;
 }
 
 #app {
@@ -24,6 +25,18 @@ img.head_img {
 	border: 2px solid #FFFFFF;
 	margin-top: 15px;
 	margin-bottom: 18px;
+}
+
+a:link {
+	color: #ff9900ff
+}
+
+a:visited {
+	color: #dd7722ff
+}
+
+.center {
+	display: inline-flex;
 }
 
 * {

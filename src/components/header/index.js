@@ -1,6 +1,6 @@
 import style from './style';
 
-const Header = () => (
+export const Header = () => (
 	<header class={style.header}>
 		<img class="head_img" src="/assets/images/pgh-smile320.png" alt="pgh" />
 		<style>
@@ -8,5 +8,3 @@ const Header = () => (
 		</style>
 	</header>
 );
-
-export default Header;

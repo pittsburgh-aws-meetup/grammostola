@@ -1,0 +1,34 @@
+.svg {
+    display: block;
+    margin: auto;
+}
+
+.open {
+    list-style: none;
+    border-right: 2px;
+    border-right-color: #ff9900ff;
+    border-right-style: solid;
+    align-content: center;
+}
+
+.open ul {
+    list-style: none;
+    padding: 0;
+}
+.open ul li {
+    list-style: none;
+    align-content: center;
+}
+
+.closed {
+    list-style: none;
+}
+
+.kids {
+    width: max-content;
+    text-align: center;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
