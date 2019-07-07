@@ -11,6 +11,8 @@ import style from './app.css';
 
 require('preact/debug');
 
+require('preact/debug');
+
 export default class App extends Component {
 	render() {
 		return (

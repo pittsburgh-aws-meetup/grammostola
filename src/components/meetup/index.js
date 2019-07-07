@@ -1,5 +1,6 @@
 import { Component } from 'preact';
 import { Stretch } from 'styled-loaders';
+import axios from 'axios';
 
 import style from './style';
 
@@ -9,13 +10,21 @@ export default class Meetup extends Component {
 		this.state.meetups = [];
 	}
 
+	componentDidMount() {
+		axios.get('https://api.meetup.com/Pittsburgh-Amazon-Web-Services-AWS-Users/events')
+			.then(res => {
+				const meetups = res.data;
+				this.setState({meetups})
+			})
+	}
+
 
 	render () {
 		const meetupCount = this.state.meetups;
 		let meetups;
 
 		if (meetupCount.length <= 0) {
-			meetups = <Stretch duration="4s" size="150px" color="#ff9900" rectWidth="1px" />;
+			meetups = <Stretch duration="2s" size="75px" color="#ff9900" />;
 		}
 
 		else {
