@@ -1,9 +1,145 @@
 .meetup {
     position: relative;
-    width: 100%;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid 1px #fff;
 }
 
 .meetup h1 {
     color: #FFF;
+}
+
+.meetup:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.meetupDescription {
+    margin: 2em;
+}
+
+.meetupDateTime {
+    margin: 2em;
+}
+
+.dateComponent {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: grid;
+    border: solid 2px #fff;
+    grid-template-rows: [top-pad] 10% [top] 20% [center] auto [bottom] 20% [bottom-pad] 10%;
+}
+
+.month {
+    font-size: 1.0em;
+    grid-row-start: bottom;
+    align-self: center;
+}
+
+.day {
+    font-size: 2.2em;
+    grid-row-start: center;
+    align-self: center;
+}
+
+.dayOfWeek {
+    grid-row-start: top;
+    font-size: 1.0em;
+    align-self: center;
+}
+
+.timeComponent {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: grid;
+    border: solid 2px #fff;
+    grid-template-rows: [top-pad] 20% [center] auto [bottom] 20% [bottom-pad] 10%;
+}
+
+.hour {
+    font-size: 2.2em;
+    align-self: center;
+    grid-row-start: center;
+
+}
+
+.meri {
+    font-size: 1.0em;
+    grid-row-start: bottom;
+    align-self: center;
+}
+
+.titleWrapper {
+    display: inline-flex;
+    height: 100px;
+}
+
+.title {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.8em;
+    display: grid;
+}
+
+.innerTitle {
+    grid-row-start: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.meetupAuth {
+    border-radius: 8px;
+    background-color: #ff9900ff;
+    color: #fff;
+    border: none;
+}
+
+.buttonDiv {
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin: 1em;
+}
+
+.yesButtonSelected {
+    border-radius: 8px;
+    background-color: #008000ff;
+    color: #fff;
+    align-content: center;
+    margin: 20px;
+    border: none;
+}
+
+.yesButton {
+    border-radius: 8px;
+    color: #008000ff;
+    background-color: #fff;
+    align-content: center;
+    margin: 20px;
+    border: none;
+}
+
+.noButton {
+    border-radius: 8px;
+    color: #800000ff;
+    background-color: #fff;
+    align-content: center;
+    margin: 20px;
+    border: none;
+}
+
+.noButtonSelected {
+    border-radius: 8px;
+    background-color: #800000ff;
+    color: #fff;
+    align-content: center;
+    margin: 20px;
+    border: none;
+}
+
+.buttonText {
+    vertical-align: super;
+    font-size: 1.2em;
 }

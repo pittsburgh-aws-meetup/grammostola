@@ -11,21 +11,19 @@ import style from './app.css';
 
 require('preact/debug');
 
-require('preact/debug');
-
 export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
 				<Header />
-				<div class="center">
+				<div className={style.center}>
 					<Sidebar color={'#ff9900ff'} size={32}>
 						<ul>
 							<li><Link activeClassName="active" href="/">Home</Link></li>
 							<li><Link activeClassName="active" href="/slack">Slack code of conduct</Link></li>
 						</ul>
 					</Sidebar>
-					<div class={style.content}>
+					<div className={style.content}>
 						<Router onChange={this.handleRoute}>
 							<Home default />
 							<Slack path="/slack" />

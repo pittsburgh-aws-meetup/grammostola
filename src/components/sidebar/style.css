@@ -9,6 +9,7 @@
     border-right-color: #ff9900ff;
     border-right-style: solid;
     align-content: center;
+    flex: 0 0 20%;
 }
 
 .open ul {
@@ -18,17 +19,18 @@
 .open ul li {
     list-style: none;
     align-content: center;
+    position: relative;
 }
 
 .closed {
     list-style: none;
+    position: absolute;
 }
 
 .kids {
-    width: max-content;
     text-align: center;
-    display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
+    display: block;
 }
 

@@ -1,4 +1,13 @@
 .content {
     margin: 50px;
     position: relative;
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.center {
+    width: 100%;
+    display: flex;
 }
