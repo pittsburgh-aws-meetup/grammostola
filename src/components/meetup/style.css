@@ -143,3 +143,8 @@
     vertical-align: super;
     font-size: 1.2em;
 }
+
+.location {
+    width: 20em;
+    height: 20em;
+}

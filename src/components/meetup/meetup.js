@@ -5,6 +5,8 @@ import { CheckCircle, XCircle } from 'preact-feather';
 
 import style from './style.css';
 import * as rsvpResp from '../../../data/meetup_rsvp_response';
+import { LocationMap } from '../map';
+import SimpleMap from '../map/simple_map';
 
 export class Meetup extends Component {
 	getRsvp = () => {
@@ -70,6 +72,14 @@ export class Meetup extends Component {
 						title={props.data.name}
 						link={props.data.link}
 					/>
+				</div>
+				<div className={style.location}>
+					<SimpleMap zoom={2}>
+						<img lat={59.955413}
+							 lng={30.337844}
+							 src="/assets/images/pgh-smile320.png"
+						/>
+					</SimpleMap>
 				</div>
 				<div className={style.meetupDescription}>
 					{/* eslint-disable-next-line react/no-danger */}
@@ -150,5 +160,12 @@ const NoButton = ({ children, ...props }) => {
 	let buttonClass = props.rsvp === 'no' ? style.noButtonSelected : style.noButton;
 	return (
 		<button className={buttonClass} onClick={props.onClick}>{children}</button>
+	);
+};
+
+const Location = ({ children, ...props }) => {
+	let center = { lat: props.lat, lng: props.lon };
+	return (
+		<LocationMap mapHeight={'100vh'} mapWidth={'100%'} center={center} zoom={8} />
 	);
 };
