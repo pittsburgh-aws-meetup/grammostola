@@ -6,6 +6,7 @@ import { Footer } from './footer';
 import Sidebar from './sidebar';
 import Home from './routes/home';
 import Slack from './routes/slack';
+import SimpleMapRoute from './routes/simple_map';
 import style from './app.css';
 
 
@@ -21,12 +22,14 @@ export default class App extends Component {
 						<ul>
 							<li><Link activeClassName="active" href="/">Home</Link></li>
 							<li><Link activeClassName="active" href="/slack">Slack code of conduct</Link></li>
+							<li><Link activeClassName="active" href="/map">Map</Link></li>
 						</ul>
 					</Sidebar>
 					<div className={style.content}>
 						<Router onChange={this.handleRoute}>
 							<Home default />
 							<Slack path="/slack" />
+							<SimpleMapRoute path="/map" />
 						</Router>
 					</div>
 				</div>
