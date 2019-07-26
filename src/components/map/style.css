@@ -1,4 +1,22 @@
 .mapContainer {
-    width: 100%;
+    width: 50%;
     height: 100%;
+    margin: 20px;
+}
+
+.locationText {
+    align-content: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.markerDiv {
+    width: 50em;
+    height: 50em;
+}
+
+.infoWindow {
+    display: flex;
+    width: 50em;
+    height: 50em;
 }
