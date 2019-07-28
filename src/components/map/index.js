@@ -1,46 +1,71 @@
 import GoogleMapReact from 'google-map-react';
 import { GOOGLE_API_KEY } from '../../service/api';
-import { Component } from 'preact';
+import { Component, createRef } from 'preact';
 
 import style from './style.css';
 
 const markerStyle = {
 	position: 'absolute',
-	transform: 'translate(-50%, -100%)'
+	transform: 'translate(-50%, -100%)',
+	'z-index': '-1'
 };
 
 const infoStyle = {
 	position: 'absolute',
-	transform: 'translate(-50%, 0%)',
+	transform: 'translate(-50%, -151%)',
 	width: 'max-content'
+};
+
+class PghInfoWindow extends Component {
+	static defaultProps = {
+		strokeWidthOffset: 1,
+		minX: 0,
+		minY: 0,
+	};
+
+	constructor() {
+		super();
+		this.state.height = 1000;
+		this.state.width = 1000;
+		this.sizingRef = createRef();
+	}
+
+	componentDidMount() {
+		const { width, height } = this.sizingRef.current.getBoundingClientRect();
+		// eslint-disable-next-line react/no-did-mount-set-state
+		this.setState({ width, height });
+	}
+
+	render(props, state) {
+		const calcMinX = props.minX - props.strokeWidthOffset;
+		const calcMinY = props.minY - props.strokeWidthOffset;
+		const viewBoxWidth = state.width + (2 * props.strokeWidthOffset);
+		const viewBoxHeight = state.height + (2 * props.strokeWidthOffset);
+
+		return (
+			<div style={{ width: state.width, height: state.height }}>
+				<svg viewBox={`${calcMinX} ${calcMinY} ${viewBoxWidth} ${viewBoxHeight}`}
+					 xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" fill="#ff9900"
+					 className={style.infoWindowBubble}
+				>
+					<rect width={state.width/2} height={state.height/2} rx="2"
+						  style="fill:#262f3eff;stroke-width:2;stroke:#ffffff;stroke-linejoin:round"
+					/>
+				</svg>
+				<ul ref={this.sizingRef} className={style.infoWindowText}>
+					<a href={`https://www.google.com/maps/search/?api=1&query=${props.lat},${props.lng}`}>
+						<li>{props.name}</li>
+						<li>{props.address_1}</li>
+						<li>{props.city + ', ' + props.state + ' ' + props.zip}</li>
+					</a>
+				</ul>
+			</div>
+		);
+	}
 }
 
-const PghMarker = (props) => (
-	<div style={markerStyle}>
-		<img width={props.width} height={props.height} src={props.src} alt="pgh" />
-	</div>
-);
-
-const PghInfoWindow = ({ name, address_1, city, state, zip }) => (
-	<div>
-		<svg viewBox="-5 -5 155 155" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" fill="#ff9900">
-			<rect width="150" height="100" rx="15"
-				  style="fill:#262f3eff;stroke-width:10;stroke:#ffffff;stroke-linejoin:round"/>
-			<text x="10" y="20">{name}</text>
-			<text x="10" y="40">{address_1}</text>
-			<text x="10" y="60">{city + ', ' + state + ' ' + zip}</text>
-		</svg>
-		<div>
-			<div>{name}</div>
-			<div>{address_1}</div>
-			<div>{city + ', ' + state + ' ' + zip}</div>
-		</div>
-	</div>
-);
-
-class PghMarker2 extends Component {
+class PghMarker extends Component {
 	onclick = () => {
-		console.log('clicked pghmarker2');
 		this.setState({ open: !this.state.open });
 	};
 
@@ -64,44 +89,24 @@ class PghMarker2 extends Component {
 	}
 }
 
-export class Location extends Component {
-	static defaultProps = {
-		lat: 40.441794,
-		lon: -80.012337,
-		zoom: 4
-	};
-
-	constructor() {
-		super();
+export const Location = (props) => {
+	let map;
+	let height;
+	let margin;
+	if (props.lat && props.lon) {
+		map = <LocationMap center={{ lng: props.lon, lat: props.lat }} zoom={props.zoom} {...props} />;
+		height = props.mapHeight;
+		margin = '40px';
 	}
-
-	render (props, state) {
-		return (
-			<div style={{ width: 'auto', height: props.mapHeight, margin: '40px', display: 'flex' }}>
-				<LocationMap center={{ lng: props.lon, lat: props.lat }} zoom={props.zoom} {...props} />
-				<LocationText {...props} />
-			</div>
-		);
+	else {
+		map = null;
+		height = 0;
+		margin ='0';
 	}
-}
-
-// eslint-disable-next-line camelcase
-const LocationText = (props) => {
-	let { name, city, state, zip } = props;
-	let address = props.address_1;
-	let coarseAddressLine = city + ', ' + state + ' ' + zip;
 
 	return (
-		<div className={style.locationText}>
-			<div>
-				{name}
-			</div>
-			<div>
-				{address}
-			</div>
-			<div>
-				{coarseAddressLine}
-			</div>
+		<div style={{ width: 'auto', height, margin, display: 'flex', 'justify-content': 'center' }}>
+			{map}
 		</div>
 	);
 };
@@ -114,7 +119,7 @@ export const LocationMap = ({ center, zoom, ...other }) => (
 			defaultZoom={zoom}
 			yesIWantToUseGoogleMapApiInternals
 		>
-			<PghMarker2
+			<PghMarker
 				lat={center.lat}
 				lng={center.lng}
 				width={46}
