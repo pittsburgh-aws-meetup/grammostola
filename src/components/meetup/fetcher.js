@@ -13,10 +13,16 @@ export class MeetupFetcher extends Component {
 	);
 
 	getIdentity = () => {
-		let headers = { Authorization: 'Bearer ' + this.state.accessToken };
-		axios.get('https://api.meetup.com/members/self', { headers })
+		let headers = {
+			Authorization: 'Bearer 0de1f0904a3d504932619d36fd2b44d9',
+			'Cache-Control': 'no-cache'
+		};
+
+		let url = 'https://cors-anywhere.herokuapp.com/https://api.meetup.com/members/self';
+
+		axios.get(url, { headers })
 			.then( res => {
-				let identity = res.id;
+				let identity = res.data.id;
 				localStorage.setItem('meetup_id', identity);
 				this.setState({ identity });
 			})
@@ -29,8 +35,12 @@ export class MeetupFetcher extends Component {
 
 	getMeetups = () => {
 		if (Date.now() > this.state.lastUpdate + 300000) {
-			let headers = { Authorization: 'Bearer ' + this.state.accessToken };
-			axios.get('https://api.meetup.com/Pittsburgh-Amazon-Web-Services-AWS-Users/events',
+			let headers = {
+				Authorization: 'Bearer ' + this.state.accessToken,
+				'Content-Type': 'application/json'
+			};
+
+			axios.get('https://cors-anywhere.herokuapp.com/https://api.meetup.com/Pittsburgh-Amazon-Web-Services-AWS-Users/events',
 				{ headers })
 				.then(res => {
 					const meetups = this.buildMeetups(res);
@@ -57,9 +67,11 @@ export class MeetupFetcher extends Component {
 	};
 
 	login = () => {
+		let { callback_url, client_id } = this.props;
+		console.log(`Callback URL: ${callback_url}`);
 		authorize('https://secure.meetup.com/oauth2/authorize', {
-			client_id: this.props.client_id,
-			redirect_uri: this.props.callback_url,
+			client_id,
+			redirect_uri: callback_url,
 			response_type: 'token',
 			scope: 'ageless basic'
 		});
