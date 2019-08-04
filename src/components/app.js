@@ -13,6 +13,7 @@ require('preact/debug');
 
 export default class App extends Component {
 	render() {
+		document.title = "Pittsburgh AWS Users' Group";
 		return (
 			<div id="app">
 				<Header />
