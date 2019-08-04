@@ -48,8 +48,8 @@ export class Meetup extends Component {
 			});
 	};
 
-	rsvpNo = () => this.postRsvp('no');
-	rsvpYes = () => this.postRsvp('yes');
+	rsvpNo = () => { if (this.state.rsvp !== 'no') this.postRsvp('no'); };
+	rsvpYes = () => { if (this.state.rsvp !== 'yes') this.postRsvp('yes'); };
 
 	constructor() {
 		super();
