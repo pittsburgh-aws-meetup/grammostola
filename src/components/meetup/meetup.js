@@ -45,7 +45,7 @@ const Address = ({ name, address_1, city, state, zip }) => (
 
 const TimeDisplay = ({ children, ...props }) => {
 	const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-	const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+	const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 	let dateTimeString = props.date + 'T' + props.time;
 	let dateObj = new Date(dateTimeString);
 	let hour = dateObj.getHours() % 12;
