@@ -12,6 +12,8 @@ export const Meetup = (props) => (
 				title={props.data.name}
 				link={props.data.link}
 				venue={props.data.venue}
+				isOnline={props.data.is_online_event}
+				onlineLink={props.data.how_to_find_us}
 			/>
 		</div>
 		<Location mapHeight={'20em'} mapWidth={'50%'} zoom={14} {...props.data.venue} />
@@ -23,23 +25,49 @@ export const Meetup = (props) => (
 );
 
 const Title = ({ children, ...props }) => {
-	const address = props.venue ? <Address {...props.venue} /> : null;
+	const subTitle = props.isOnline ? <OnlineLink name={props.venue.name} link={props.onlineLink} /> : <Address {...props.venue} />;
 
 	return (
 		<span className={style.innerTitle}>
 			<Link activeClassName="active" href={props.link}>
 				{props.text}
 			</Link>
-			{address}
+			{subTitle}
 		</span>
 	);
 };
 
-const Address = ({ name, address_1, city, state, zip }) => (
+const Address = ({ name, address1, city, state, zip }) => {
+	let address2 = '';
+	if (city && state && zip) {
+		address2 = city + ', ' + state + ' ' + zip;
+	}
+
+	if (!name) {
+		name = '';
+	}
+
+	if (!address1) {
+		address1 = '';
+	}
+
+	return (
+		<ul className={style.addressul}>
+			<li className={style.addressli}>{name}</li>
+			<li className={style.addressli}>{address1}</li>
+			<li className={style.addressli}>{address2}</li>
+		</ul>
+	);
+};
+
+const OnlineLink = ({ link, name }) => (
 	<ul className={style.addressul}>
 		<li className={style.addressli}>{name}</li>
-		<li className={style.addressli}>{address_1}</li>
-		<li className={style.addressli}>{city + ', ' + state + ' ' + zip}</li>
+		<li className={style.addressli}>
+			<Link activeClassName="active" href={link}>
+				<img className={style.video_call_img} src="/assets/images/video_call.png" alt="video_link" />
+			</Link>
+		</li>
 	</ul>
 );
 
@@ -60,7 +88,14 @@ const TimeDisplay = ({ children, ...props }) => {
 					dayOfWeek={days[dateObj.getDay()]}
 				/>
 				<span className={style.title}>
-					<Title link={props.link} class={style.title} text={props.title} venue={props.venue} />
+					<Title
+						link={props.link}
+						class={style.title}
+						text={props.title}
+						venue={props.venue}
+						isOnline={props.isOnline}
+						onlineLink={props.onlineLink}
+					/>
 				</span>
 				<TimeComponent hour={hour} meridiem={meridiem} />
 			</div>

@@ -163,3 +163,16 @@
     list-style: none;
     font-size: 0.8em;
 }
+
+img.video_call_img {
+    width: 20%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid #FFFFFF;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
