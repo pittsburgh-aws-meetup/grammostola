@@ -34,9 +34,18 @@ export class MeetupFetcher extends Component {
 
 	constructor() {
 		super();
-		let meetups = localStorage.getItem('meetups');
+		let meetups;
+		if (typeof window !== 'undefined') {
+			meetups = localStorage.getItem('meetups');
+		}
 		this.state.meetups = meetups ? this.buildMeetups(JSON.parse(meetups)) : [];
-		this.state.lastUpdate = localStorage.getItem('last_meetup_update') || 0;
+		if (typeof window !== 'undefined') {
+			this.state.lastUpdate = localStorage.getItem('last_meetup_update') || 0;
+		}
+		else {
+			this.state.lastUpdate = 0;
+		}
+
 	}
 
 	componentDidMount() {

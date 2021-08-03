@@ -13,7 +13,12 @@ export default class Sidebar extends Component {
 
 	constructor() {
 		super();
-		this.state.open = (localStorage.getItem('side_bar_state') === 'true');
+		if (typeof window !== 'undefined') {
+			this.state.open = (localStorage.getItem('side_bar_state') === 'true');
+		}
+		else {
+			this.state.open = false;
+		}
 	}
 
 	render(props, state) {
